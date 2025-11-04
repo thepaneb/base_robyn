@@ -24,7 +24,7 @@
 				"camerom.vscode-pytest"
 			],
 			"settings": {
-				"python.defaultInterpreterPath": "/workspaces/base_robyn/.venv/bin/python",
+				"python.defaultInterpreterPath": "./.venv/bin/python",
                 "files.encoding": "utf8",
                 "editor.detectIndentation": false,
                 "[python]": {
@@ -43,7 +43,13 @@
                 ],
                 "python.testing.unittestEnabled": false,
                 "python.testing.pytestEnabled": true,
-                "pylint.lintOnChange": true
+                "pylint.lintOnChange": false,
+                "python.analysis.typeCheckingMode": "off",
+                "files.exclude": {
+                    "**/.git": true,
+                    "**/__pycache__": true,
+                    "**/.venv": true
+                }
 			}
 		}
 	},

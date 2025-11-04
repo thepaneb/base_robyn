@@ -6,6 +6,7 @@ import os
 
 from api import Robyn
 
+from extensions.log import basic_logger
 from modules.hello_world.router import router
 
 
@@ -27,8 +28,9 @@ def init_routes():
         module = importlib.util.module_from_spec(spec)
         try:
             spec.loader.exec_module(module)
+            basic_logger.info(f"Loaded route: {module_name}")
         except Exception as e:  # pylint: disable=broad-except
-            print(f"Failed to load route {module_name}: {e}")
+            basic_logger.error(f"Failed to load route {module_name}: {e}")
 
 
 def init_module(robyn_app: Robyn):

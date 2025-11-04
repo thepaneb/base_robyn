@@ -28,13 +28,19 @@
             "--max-line-length=240"
         ],
         "python.testing.unittestEnabled": false,
-        "python.testing.pytestEnabled": true
+        "python.testing.pytestEnabled": true,
+        "python.analysis.typeCheckingMode": "off",
+        "files.exclude": {
+            "**/.git": true,
+            "**/__pycache__": true,
+            "**/.venv": true
+        }
     },
     "launch": {
         "version": "0.2.0",
         "configurations": [
             {
-                "name": "Debug",
+                "name": "Debug - DEV",
                 "type": "debugpy",
                 "request": "launch",
                 "module": "robyn",
@@ -46,6 +52,25 @@
                 "args": [
                     "app/run.py",
                     "--dev",
+                    "--processes=1",
+                    "--workers=1",
+                    "--log-leve",
+                    "DEBUG"
+                ]
+            },
+            {
+                "name": "Debug - FAST",
+                "type": "debugpy",
+                "request": "launch",
+                "module": "robyn",
+                "env": {
+                    "ROBYN_DEV_MODE": "True",
+                    "ROBYN_HOST": "0.0.0.0",
+                    "ROBYN_PORT": "40001"
+                },
+                "args": [
+                    "app/run.py",
+                    "--fast",
                     "--processes=1",
                     "--workers=1",
                     "--log-leve",

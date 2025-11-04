@@ -29,4 +29,4 @@ ENTRYPOINT []
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:8080/api/status || exit 1
 
-CMD ["python", "run.py", "--fast", "--log-level", "INFO"]
+CMD ["python", "run.py", "--fast"]
