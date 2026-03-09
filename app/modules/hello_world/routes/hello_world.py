@@ -1,5 +1,7 @@
 """
-Hello world module routes."""
+Hello world module routes.
+"""
+
 from modules.hello_world.router import router
 
 

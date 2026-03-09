@@ -24,7 +24,7 @@
 				"camerom.vscode-pytest"
 			],
 			"settings": {
-				"python.defaultInterpreterPath": "./.venv/bin/python",
+				"python.defaultInterpreterPath": "/workspaces/base_robyn/.venv/bin/python",
                 "files.encoding": "utf8",
                 "editor.detectIndentation": false,
                 "[python]": {

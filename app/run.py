@@ -5,7 +5,7 @@ Main entry point for the application.
 import importlib.util
 import os
 
-from api import app, Robyn
+from api import Robyn, app
 from extensions.log import basic_logger
 
 
@@ -29,9 +29,9 @@ def init_modules(robyn_app: Robyn):
             spec.loader.exec_module(module)
             if hasattr(module, "init_module"):
                 module.init_module(robyn_app)
-                basic_logger.info(f"Initialized module: {module_name}")
+                basic_logger.info("Initialized module: %s", module_name)
         except Exception as e:  # pylint: disable=broad-except
-            basic_logger.error(f"Failed to initialize module {module_name}: {e}")
+            basic_logger.error("Failed to initialize module %s: %s", module_name, e)
 
 
 init_modules(app)
