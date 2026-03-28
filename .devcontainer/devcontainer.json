@@ -21,7 +21,8 @@
 				"ms-python.debugpy",
 				"ms-python.vscode-python-envs",
 				"charliermarsh.ruff",
-				"camerom.vscode-pytest"
+				"camerom.vscode-pytest",
+				"eamodio.gitlens"
 			],
 			"settings": {
 				"python.defaultInterpreterPath": "/workspaces/base_robyn/.venv/bin/python",

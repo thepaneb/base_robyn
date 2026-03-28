@@ -5,7 +5,7 @@ description = "A base Robyn project"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "robyn"
+    "robyn[all]"
 ]
 [dependency-groups]
 dev = [
