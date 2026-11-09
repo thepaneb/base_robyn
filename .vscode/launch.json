@@ -16,7 +16,7 @@
                 "--dev",
                 "--processes=1",
                 "--workers=1",
-                "--log-leve",
+                "--log-level",
                 "DEBUG"
             ]
         },
@@ -35,7 +35,7 @@
                 "--fast",
                 "--processes=1",
                 "--workers=1",
-                "--log-leve",
+                "--log-level",
                 "DEBUG"
             ]
         }
