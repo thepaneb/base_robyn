@@ -1,5 +1,5 @@
 services:
-  base_royn_app:
+  base_robyn_app:
     build: .
     environment:
       - ROBYN_HOST=0.0.0.0
