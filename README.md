@@ -8,6 +8,7 @@
   <img alt="Robyn" src="https://img.shields.io/badge/Robyn-0.x-6C47FF">
   <img alt="uv" src="https://img.shields.io/badge/uv-managed-DE5FE9?logo=uv&logoColor=white">
   <img alt="Docker" src="https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white">
+  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
 ## Why use this template
@@ -95,4 +96,4 @@ Compose maps host `50001` → container `8080`. The app reads `ROBYN_HOST`, `ROB
 
 ## License
 
-This template does not ship a license file. Add one if you plan to distribute derived work.
+MIT — see [LICENSE](LICENSE).
