@@ -11,6 +11,8 @@
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
+**Landing page:** <https://thepaneb.github.io/base-robyn/>
+
 ## Why use this template
 
 - **uv for everything** — `uv sync` creates the virtualenv and installs from the committed `uv.lock`.
